@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RR</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+        <meta charset="utf-8" />
+        <style>
+            table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+            </style>
+    </head>
+    <body>
+        <form id="myform" onsubmit="return rr()"></form>
+        <table id="t01" style="width:10%">
+            <tr>
+              <th>Process</th>
+              <th>Burst_time</th>
+              <th>Arrival_time</th> 
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td><input id="bt_p1" type="number" step="1"></td>
+              <td><input id="at_p1" type="number" step="1"></td> 
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td><input id="bt_p2" type="number" step="1"></td>
+              <td><input id="at_p2" type="number" step="1"></td>
+            </tr>
+            <tr>
+                <td>P3</td>
+                <td><input id="bt_p3" type="number" step="1"></td>
+                <td><input id="at_p3" type="number" step="1"></td> 
+            </tr>
+            <tr>
+                <td>P4</td>
+                <td><input id="bt_p4" type="number" step="1"></td> 
+                <td><input id="at_p4" type="number" step="1"></td>
+            </tr>
+            <tr>
+                <td>P5</td>
+                <td><input id="bt_p5" type="number" step="1"></td> 
+                <td><input id="at_p5" type="number" step="1"></td>
+            </tr>
+
+          </table>
+          <button type="submit" id="submitbtn">Submit</button>
+        </form>    
+          <script src="rr.js">
+            rr();
+              
+          </script>
+    </body>
+</html>
